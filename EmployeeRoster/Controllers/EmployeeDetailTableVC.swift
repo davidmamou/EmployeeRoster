@@ -48,23 +48,33 @@ class EmployeeDetailTableVC: UITableViewController, UITextFieldDelegate {
             tableView.endUpdates()
         }
     }
-    let datePickerIndexPath = IndexPath(row: 3, section: 1)
+    let datePickerIndexPath = IndexPath(row: 2, section: 1)
     
    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        if indexPath.row != datePickerIndexPath.row{
-            return 44.0
-        }
-        if isEditingBirthday{
-            return 216.0
-        } else{
-            return 0.0
+        if indexPath.row == datePickerIndexPath.row
+        {
+            
+            if isEditingBirthday
+            {
+                return 216.0
+            }
+                return 0.0
         }
         
+        return 44.0
     }
         
-        
+   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    
+    if indexPath.row == datePickerIndexPath.row - 1
+    {
+        isEditingBirthday = !isEditingBirthday
+    }
+    
+    }
  
     
 
