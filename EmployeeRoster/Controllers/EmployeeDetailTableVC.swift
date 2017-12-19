@@ -40,6 +40,11 @@ class EmployeeDetailTableVC: UITableViewController, UITextFieldDelegate {
             navigationItem.title = "New Employee"
         }
     }
+    
+    var isEditingBirthday : Bool = false{
+        didSet{
+            tableView.beginUpdates()
+    }
 
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
         if let name = nameTextField.text {

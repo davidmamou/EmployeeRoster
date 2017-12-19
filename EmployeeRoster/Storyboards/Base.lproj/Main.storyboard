@@ -139,12 +139,34 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="216" id="LbC-Ce-N5b">
+                                        <rect key="frame" x="0.0" y="123" width="375" height="216"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LbC-Ce-N5b" id="of7-o2-dcQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TcO-bN-Byv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="535379592.68611503">
+                                                        <!--2017-12-19 12:33:12 +0000-->
+                                                    </date>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="TcO-bN-Byv" secondAttribute="bottom" id="Aho-uO-lzS"/>
+                                                <constraint firstItem="TcO-bN-Byv" firstAttribute="top" secondItem="of7-o2-dcQ" secondAttribute="top" id="BIS-94-oOh"/>
+                                                <constraint firstItem="TcO-bN-Byv" firstAttribute="leading" secondItem="of7-o2-dcQ" secondAttribute="leading" id="R1r-AI-Cix"/>
+                                                <constraint firstAttribute="trailing" secondItem="TcO-bN-Byv" secondAttribute="trailing" id="cDU-yi-DDh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection id="aDF-tK-lSx">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="u3K-uz-UjH">
-                                        <rect key="frame" x="0.0" y="159" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="375" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u3K-uz-UjH" id="6dm-Hg-fuN">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
