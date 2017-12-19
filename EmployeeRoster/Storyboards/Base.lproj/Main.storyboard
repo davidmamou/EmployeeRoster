@@ -218,6 +218,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="datePicker" destination="TcO-bN-Byv" id="rhH-xw-PF8"/>
                         <outlet property="dobLabel" destination="eDi-3x-Sdd" id="hKH-oX-57e"/>
                         <outlet property="employeeTypeLabel" destination="cPh-9e-v2j" id="hj4-eQ-B8k"/>
                         <outlet property="nameTextField" destination="zjD-iz-eCp" id="ZRi-HR-sx5"/>

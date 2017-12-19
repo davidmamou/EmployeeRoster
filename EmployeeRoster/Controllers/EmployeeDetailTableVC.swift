@@ -17,6 +17,7 @@ class EmployeeDetailTableVC: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var dobLabel: UILabel!
     @IBOutlet weak var employeeTypeLabel: UILabel!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     var employee: Employee?
     
@@ -47,6 +48,25 @@ class EmployeeDetailTableVC: UITableViewController, UITextFieldDelegate {
             tableView.endUpdates()
         }
     }
+    let datePickerIndexPath = IndexPath(row: 3, section: 1)
+    
+   
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if indexPath.row != datePickerIndexPath.row{
+            return 44.0
+        }
+        if isEditingBirthday{
+            return 216.0
+        } else{
+            return 0.0
+        }
+        
+    }
+        
+        
+ 
+    
 
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
         if let name = nameTextField.text {
