@@ -44,6 +44,8 @@ class EmployeeDetailTableVC: UITableViewController, UITextFieldDelegate {
     var isEditingBirthday : Bool = false{
         didSet{
             tableView.beginUpdates()
+            tableView.endUpdates()
+        }
     }
 
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
